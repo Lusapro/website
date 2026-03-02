@@ -1,1 +1,107 @@
 
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gameboy – Lucas Sandmo</title>
+  <meta name="description" content="Self made gameboy with snake – Arduino Nano, C++, soldering og 3D-print." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Lucas Sandmo</a>
+      <nav class="nav">
+        <a href="/#projects">Projects</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top:84px">
+    <section class="section">
+      <div class="container">
+
+        <p style="margin:0 0 10px;">
+          <a class="link" href="/#projects">← Back to projects</a>
+        </p>
+
+        <h1 style="margin:0 0 10px;font-size:clamp(30px,3vw,46px)">Gameboy</h1>
+
+        <p style="margin:0 0 18px;color:var(--muted);max-width:75ch;line-height:1.7">
+          A self-made handheld “Gameboy-style” console with the game Snake.
+          Built as a full prototype from electronics to code and 3D-printed casing.
+        </p>
+
+        <!-- Hero image -->
+        <div style="border-radius:26px;overflow:hidden;border:1px solid var(--border);background:rgba(15,33,68,.35)">
+          <img
+            src="/assets/img/gameboy.jpg"
+            alt="Gameboy prototype"
+            style="width:100%;display:block;max-height:540px;object-fit:cover"
+          />
+        </div>
+
+        <!-- Tags -->
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Arduino Nano</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">C++</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Soldering</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">3D print</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start">
+
+        <!-- Left: story -->
+        <div style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px">What I built</h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li>Handheld console with buttons and display</li>
+            <li>Snake game (custom code)</li>
+            <li>3D-printed enclosure and internal mounting</li>
+            <li>Wiring, soldering, and iterative prototyping</li>
+          </ul>
+
+          <h2 style="margin:18px 0 10px">Challenges</h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li>Fitting components neatly inside a compact case</li>
+            <li>Reliable button feel and responsiveness</li>
+            <li>Power and stability during gameplay</li>
+          </ul>
+        </div>
+
+        <!-- Right: quick facts -->
+        <aside style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px">Quick facts</h2>
+          <div style="display:grid;gap:10px;color:var(--muted);line-height:1.6">
+            <div><strong style="color:var(--text)">Status:</strong> Prototype</div>
+            <div><strong style="color:var(--text)">Category:</strong> Embedded + 3D print</div>
+            <div><strong style="color:var(--text)">Main tech:</strong> Arduino Nano, C++</div>
+          </div>
+
+          <div style="margin-top:16px">
+            <a class="btn btn-outline" href="/#projects">Back to projects</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Lucas Sandmo</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
