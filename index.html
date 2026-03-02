@@ -1,11 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lucas Sandmo</title>
+  <meta name="description" content="Prosjekter innen elektronikk, embedded og iOS." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
-  <h1>Dette er min nettside 🚀</h1>
-  <p>Den er laget av meg selv.</p>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Lucas Sandmo</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO VIDEO -->
+  <section class="hero">
+    <video class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/assets/video/hero-poster.jpg">
+      <source src="/assets/video/hero.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Building electronics & apps</h1>
+      <p>Prototyping, embedded systems, PCB, 3D printing og SwiftUI.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">See projects</a>
+        <a class="btn btn-outline" href="/about.html">About me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <main>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="cards">
+          <a class="card" href="/projects/gameboy.html">
+            <img src="/assets/img/gameboy.jpg" alt="Gameboy project" />
+            <div class="card-label">Gameboy</div>
+          </a>
+
+          <a class="card" href="/projects/simon.html">
+            <img src="/assets/img/simon.jpg" alt="Simon project" />
+            <div class="card-label">Simon</div>
+          </a>
+
+          <a class="card" href="/projects/insulin-temp-sensor.html">
+            <img src="/assets/img/insulin.jpg" alt="Insulin temp sensor" />
+            <div class="card-label">Insulin temp sensor</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Lucas Sandmo</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
