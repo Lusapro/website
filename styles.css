@@ -140,3 +140,25 @@ body{
   .card img{height:260px}
   .hero{min-height: 480px}
 }
+
+/* for nice back link */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  background: rgba(15,33,68,0.35);
+}
+
+.back-link:hover {
+  color: var(--text);
+  border-color: rgba(110,203,255,.5);
+  transform: translateX(-2px);
+}
