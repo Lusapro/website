@@ -202,3 +202,33 @@ body{
   display: block;
   background: rgba(15,33,68,0.35);
 }
+
+
+
+/* NO/EN style */
+.lang-switch{
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(15,33,68,0.35);
+  margin-left: 14px;
+}
+
+.lang-btn{
+  border: 0;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.lang-btn.active{
+  background: rgba(110,203,255,.18);
+  color: var(--text);
+  border: 1px solid rgba(110,203,255,.35);
+}
