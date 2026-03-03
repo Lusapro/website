@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simon – Lucas Sandmo</title>
+  <meta name="description" content="Self made Tony Stark halloween costume – Attiny85, ESP32-C3, C++, soldering og 3D-print." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Lucas Sandmo</a>
+      <nav class="nav">
+        <a href="/#projects">Projects</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top:84px">
+    <section class="section">
+      <div class="container">
+
+        <p style="margin:0 0 10px;">
+          <a class="back-link" href="/#projects">
+            ← Back to projects
+          </a>
+        </p>
+
+        <h1 style="margin:0 0 10px;font-size:clamp(30px,3vw,46px)">Halloween costume</h1>
+
+        <p style="margin:0 0 18px;color:var(--muted);max-width:75ch;line-height:1.7">
+          A self-made Tony Stark halloween costume with a arc reactor and glowing classes.
+        </p>
+
+        <!-- Hero image -->
+        <div style="border-radius:26px;overflow:hidden;border:1px solid var(--border);background:rgba(15,33,68,.35)">
+          <img
+            src="/assets/img/halloween.jpg"
+            alt="Halloween costume"
+            class="project-hero-image"
+          />
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="/assets/img/halloween-1.jpg" alt="Halloween detail 1">
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/img/halloween-2.jpg" alt="Halloween detail 2">
+          </div>
+          <div class="gallery-item">
+            <img src="/assets/img/halloween-3.jpg" alt="Halloween detail 3">
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Attiny85</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">ESP32-C3</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">C++</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Soldering</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">3D print</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start">
+
+        <!-- Left: story -->
+        <div style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px">What I built</h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li>Arc reactor with LEDs</li>
+            <li>Blink pattern</li>
+            <li>3D-printed enclosure</li>
+            <li>Wiring, soldering, and iterative prototyping</li>
+          </ul>
+
+          <h2 style="margin:18px 0 10px">Challenges</h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li>Fitting components neatly inside a compact case</li>
+            <li>Auto turn on glasses</li>
+            <li>Battery life</li>
+          </ul>
+        </div>
+
+        <!-- Right: quick facts -->
+        <aside style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px">Quick facts</h2>
+          <div style="display:grid;gap:10px;color:var(--muted);line-height:1.6">
+            <div><strong style="color:var(--text)">Status:</strong> Prototype</div>
+            <div><strong style="color:var(--text)">Category:</strong> Embedded + 3D print</div>
+            <div><strong style="color:var(--text)">Main tech:</strong> Attiny85, ESP32-C3, C++</div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Lucas Sandmo</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
