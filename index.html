@@ -38,11 +38,13 @@
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
-      <h1>Building electronics & apps</h1>
-      <p>Prototyping, embedded systems, PCB, 3D printing and SwiftUI.</p>
+      <h1 data-no="Jeg bygger elektronikk og apper"
+          data-en="Building electronics & apps"></h1>
+      <p data-no="Prototyping, embedded systems, PCB, 3D printing og SwiftUI."
+         data-en="Prototyping, embedded systems, PCB, 3D printing and SwiftUI."></p>
       <div class="hero-actions">
-        <a class="btn" href="#projects">See projects</a>
-        <a class="btn btn-outline" href="/about.html">About me</a>
+        <a class="btn" href="#projects" data-no="Se prosjekter" data-en="See projects"></a>
+        <a class="btn btn-outline" href="/about.html" data-no="Om meg" data-en="About me"></a>
       </div>
     </div>
   </section>
@@ -51,7 +53,10 @@
   <main>
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title"
+            data-no="Prosjekter"
+            data-en="Projects">
+        </h2>
 
         <div class="cards">
           <a class="card" href="/projects/gameboy.html">
@@ -66,14 +71,14 @@
 
           <a class="card" href="/projects/insulin-temp-sensor.html">
             <img src="/assets/img/insulin.jpg" alt="Insulin temp sensor" />
-            <div class="card-label">Insulin temp sensor</div>
+            <div class="card-label" data-no="Insulin temp sensor" data-en="Insulin temp sensor"></div>
           </a>
 
 
 
           <a class="card" href="/projects/halloween.html">
             <img src="/assets/img/halloween.jpg" alt="Halloween costume" />
-            <div class="card-label">Halloween costume</div>
+            <div class="card-label" data-no="Halloween kostyme" data-en="Halloween costume"></div>
           </a>
         </div>
       </div>
@@ -86,10 +91,11 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+</script>
 
-  <script src="/lang.js"></script>
+<script src="/lang.js"></script>
 </body>
 </html>
