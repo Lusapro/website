@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About – Lucas Sandmo</title>
+  <title data-no="Om meg – Lucas Sandmo" data-en="About me – Lucas Sandmo"></title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -12,9 +12,14 @@
   <div class="container topbar-inner">
     <a class="brand" href="/">Lucas Sandmo</a>
     <nav class="nav">
-      <a href="/#projects">Projects</a>
-      <a href="/about.html">About</a>
+      <a href="/#projects" data-no="Prosjekter" data-en="Projects"></a>
+      <a href="/about.html" data-no="Om meg" data-en="About me"></a>
     </nav>
+
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button class="lang-btn" type="button" data-lang="no">NO</button>
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+    </div>
   </div>
 </header>
 
@@ -26,10 +31,9 @@
       <div>
         <h1 style="font-size:clamp(30px,3vw,44px);margin:0 0 12px">Who I am</h1>
 
-        <p style="color:var(--muted);line-height:1.6">
-          My name is Lucas Sandmo and I am currently studying Electrical Engineering at NTNU in Gjøvik.
-          I am a certified power grid worker and I have a strong interest in developing and prototyping
-          electronic systems — both academically and independently.
+        <p style="color:var(--muted);line-height:1.6"
+           data-no="Mitt navn er Lucas Sandmo. Jeg studerer elektroingeniør ved NTNU i Gjøvik. Jeg er sertifisert energimontør og liker å utvikle og prototype elektroniske systemer – både på skolen og på fritiden."
+           data-en="My name is Lucas Sandmo and I am currently studying Electrical Engineering at NTNU in Gjøvik. I am a certified power grid worker and I have a strong interest in developing and prototyping electronic systems — both academically and independently.">
         </p>
 
         <div style="margin-top:20px">
@@ -49,13 +53,15 @@
     <div class="container">
       <h2>Contact</h2>
 
-      <p style="color:var(--muted)">
-        Interested in collaboration or have a question? Send me an email:
+      <p style="color:var(--muted)
+        "data-no="Interessert i å sammarbeide eller har spørsmål? Send meg en epost:"
+        data-en="Interested in collaboration or have a question? Send me an email:">
       </p>
 
       <p style="margin-top:10px">
-        <a class="btn btn-outline" href="mailto:lucassandmo04@gmail.com">
-          Send Email
+        <a class="btn btn-outline" href="mailto:lucassandmo04@gmail.com"
+          data-no="Send Epost"
+          data-en="Send Email">
         </a>
       </p>
     </div>
@@ -63,5 +69,7 @@
 
 </main>
 
+  <script src="/lang.js"></script>
+  
 </body>
 </html>
