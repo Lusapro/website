@@ -253,3 +253,7 @@ body{
 .lightbox.show {
   display: flex;
 }
+
+.clickable-img {
+  cursor: zoom-in;
+}
