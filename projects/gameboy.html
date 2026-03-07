@@ -40,6 +40,7 @@
         <!-- Hero image -->
         <div style="border-radius:26px;overflow:hidden;border:1px solid var(--border);background:rgba(15,33,68,.35)">
           <img
+            class="clickable-img"
             src="/assets/img/gameboy.jpg"
             alt="Gameboy prototype"
             class="project-hero-image"
@@ -49,13 +50,13 @@
         <!-- Gallery -->
         <div class="gallery">
           <div class="gallery-item">
-            <img src="/assets/img/gameboy-1.jpg" alt="Gameboy detail 1">
+            <img class="clickable-img" src="/assets/img/gameboy-1.jpg" alt="Gameboy detail 1">
           </div>
           <div class="gallery-item">
-            <img src="/assets/img/gameboy-2.jpg" alt="Gameboy detail 2">
+            <img class="clickable-img" src="/assets/img/gameboy-2.jpg" alt="Gameboy detail 2">
           </div>
           <div class="gallery-item">
-            <img src="/assets/img/gameboy-3.jpg" alt="Gameboy detail 3">
+            <img class="clickable-img" src="/assets/img/gameboy-3.jpg" alt="Gameboy detail 3">
           </div>
         </div>
 
@@ -119,5 +120,22 @@
   <div id="lightbox" class="lightbox">
     <img id="lightbox-img" src="">
   </div>
+
+  <script>
+    const images = document.querySelectorAll(".clickable-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add("show");
+      });
+    });
+    
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("show");
+    });
+    </script>
 </body>
 </html>
