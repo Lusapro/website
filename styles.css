@@ -232,3 +232,24 @@ body{
   color: var(--text);
   border: 1px solid rgba(110,203,255,.35);
 }
+
+/* Click on pictures */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox.show {
+  display: flex;
+}
