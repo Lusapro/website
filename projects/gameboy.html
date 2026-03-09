@@ -14,9 +14,15 @@
     <div class="container topbar-inner">
       <a class="brand" href="/">Lucas Sandmo</a>
       <nav class="nav">
-        <a href="/#projects">Projects</a>
-        <a href="/about.html">About</a>
+        <a href="#projects" data-no="Prosjekter" data-en="Projects"></a>
+        <a href="/about.html" data-no="Om meg" data-en="About me"></a> 
       </nav>
+
+      <!-- NO/EN BUTTON -->
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-btn" type="button" data-lang="no">NO</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+      </div>
     </div>
   </header>
 
@@ -25,16 +31,23 @@
       <div class="container">
 
         <p style="margin:0 0 10px;">
-          <a class="back-link" href="/#projects">
-            ← Back to projects
+          <a class="back-link" href="/#projects" 
+            data-no="← Tilbake til prosjekter"
+            data-en="← Back to projects">
           </a>
         </p>
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <h1 style="margin:0 0 10px;font-size:clamp(30px,3vw,46px)" 
+          data-no="Gameboy"                                                                                    
+          data-en="Gameboy">
+        </h1>
 
-        <h1 style="margin:0 0 10px;font-size:clamp(30px,3vw,46px)">Gameboy</h1>
-
-        <p style="margin:0 0 18px;color:var(--muted);max-width:75ch;line-height:1.7">
-          A self-made handheld “Gameboy-style” console with the game Snake.
-          Built as a full prototype from electronics to code and 3D-printed casing.
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <p style="margin:0 0 18px;color:var(--muted);max-width:75ch;line-height:1.7" 
+          data-no="En selvlaget håndholdt ”Gameboy-stil” konsol med spillet Snake.
+          Bygget som en full prototype fra elektronikk til kode og 3D-printet deksel"
+          data-en="A self-made handheld “Gameboy-style” console with the game Snake.
+          Built as a full prototype from electronics to code and 3D-printed casing."> 
         </p>
 
         <!-- Hero image -->
@@ -65,12 +78,13 @@
           </div>
         </div>
 
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
         <!-- Tags -->
         <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Arduino Nano</span>
-          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">C++</span>
-          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">Soldering</span>
-          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)">3D print</span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="Arduino Nano" data-en="Arduino Nano"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="C++" data-en="C++"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="Lodding" data-en="Soldering"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="3D print" data-en="3D print"></span>
         </div>
 
       </div>
@@ -81,7 +95,10 @@
 
         <!-- Left: story -->
         <div style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
-          <h2 style="margin:0 0 10px">What I built</h2>
+          <h2 style="margin:0 0 10px" 
+            data-no="Hva jeg bygget"                                                                                    
+            data-en="What I built">
+          </h2>
           <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
             <li>Handheld console with buttons and display</li>
             <li>Snake game (custom code)</li>
@@ -117,10 +134,6 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
    <!-- Click on pictures -->
   <div id="lightbox" class="lightbox">
     <img id="lightbox-img" src="">
@@ -129,5 +142,11 @@
   <script src="/lang.js"></script>
   <script src="/lightbox.js"></script>
 
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+  
+  <script src="/lang.js"></script>
 </body>
 </html>
