@@ -115,3 +115,194 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gameboy – Lucas Sandmo</title>
+  <meta name="description" content="Self made gameboy with snake – Arduino Nano, C++, soldering og 3D-print." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">Lucas Sandmo</a>
+      <nav class="nav">
+        <a href="#projects" data-no="Prosjekter" data-en="Projects"></a>
+        <a href="/about.html" data-no="Om meg" data-en="About me"></a> 
+      </nav>
+
+      <!-- NO/EN BUTTON -->
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-btn" type="button" data-lang="no">NO</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top:84px">
+    <section class="section">
+      <div class="container">
+
+        <p style="margin:0 0 10px;">
+          <a class="back-link" href="/#projects" 
+            data-no="← Tilbake til prosjekter"
+            data-en="← Back to projects">
+          </a>
+        </p>
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <h1 style="margin:0 0 10px;font-size:clamp(30px,3vw,46px)" 
+          data-no="Insulin temp sensor"                                                                                    
+          data-en="Insulin temp sensor">
+        </h1>
+
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <p style="margin:0 0 18px;color:var(--muted);max-width:75ch;line-height:1.7" 
+          data-no="En hjemmelaget temperatursensor for å beskytte insulinet og varsle brukeren om temperaturen har vært for kald eller høy."
+          data-en="A homemade temperature sensor to protect the insulin and alert the user if the temperature has been too cold or too high."> 
+        </p>
+
+                                                                                            <!-- UNIQUE PICTURE!!!!!! -->
+        <!-- Hero image -->
+        <div style="border-radius:26px;overflow:hidden;border:1px solid var(--border);background:rgba(15,33,68,.35)">
+          <img
+            src="/assets/img/insulin.jpg"
+            alt="Gameboy prototype"
+            class="project-hero-image"
+          />
+        </div>
+
+                                                                                              <!-- UNIQUE PICTURE!!!!!! -->
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="gallery-item">
+            <img class="clickable-img" src="/assets/img/insulin-1.jpg" alt="Halloween detail 1">
+          </div>
+          <div class="gallery-item">
+            <img class="clickable-img" src="/assets/img/insulin-2.jpg" alt="Halloween detail 2">
+          </div>
+          <div class="gallery-item">
+            <img class="clickable-img" src="/assets/img/insulin-3.jpg" alt="Halloween detail 3">
+          </div>
+        </div>
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <!-- Tags -->
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="Attiny85" data-en="Attiny85"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="ESP32-C3" data-en="ESP32-C3"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="C++" data-en="C++"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="Lodding" data-en="Soldering"></span>
+          <span style="padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)" data-no="3D print" data-en="3D print"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start">
+
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+        <!-- Left: story -->
+        <div style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px" 
+            data-no="Hva jeg bygget"                                                                                    
+            data-en="What I built">
+          </h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li
+              data-no="Temp sensor"                                                                                    
+              data-en="Temp senso"></li>
+
+            <li
+              data-no="Lys mønster program"                                                                                    
+              data-en="Light pattern program"></li>
+
+            <li
+              data-no="3D-printede deler"                                                                                    
+              data-en="3D-printed parts"></li>
+
+            <li
+              data-no="Kabling, lodding og iterativ prototyping"                                                                                    
+              data-en="Wiring, soldering, and iterative prototyping"></li>
+          </ul>
+
+                                                                                            <!-- UNIQUE NO AND EN!!!!!! -->
+          <h2 style="margin:18px 0 10px" 
+            data-no="Formål"                                                                                    
+            data-en="Purpose">
+          </h2>
+          <ul style="margin:0;color:var(--muted);line-height:1.8;padding-left:18px">
+            <li
+              data-no="Tek inspirert halloween kostyme"                                                                                    
+              data-en="Tek inspred halloween costume"></li>
+
+            <li
+              data-no="Forbedre kreativitet"                                                                                    
+              data-en="Improve creativity"></li>
+
+            <li
+              data-no="Forbedre C++ ferdigheter"                                                                                    
+              data-en="Improve C++ skills"></li>
+
+            <li
+              data-no="Læring/Gøy"                                                                                    
+              data-en="Learning/Fun"></li>
+          </ul>
+        </div>
+
+                                                                                            <!-- UNIQUE PICTURE!!!!!! -->
+        <!-- Right: quick facts -->
+        <aside style="background:rgba(15,33,68,.45);border:1px solid var(--border);border-radius:26px;padding:18px">
+          <h2 style="margin:0 0 10px"
+            data-no="Raske fakta"                                                                                    
+            data-en="Quick facts">
+          </h2>
+          <div style="display:grid;gap:10px;color:var(--muted);line-height:1.6">
+            <div><strong style="color:var(--text)" data-no="Status:" data-en="Status:"></strong> <span data-no="Prototype" data-en="Prototype"></span></div>
+            <div><strong style="color:var(--text)" data-no="Mikrokontroller:" data-en="Microcontroller:"></strong> <span data-no="Attiny85/ESP32-C3" data-en="Attiny85/ESP32-C3"></span></div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Lucas Sandmo</small>
+      </div>
+    </footer>
+  </main>
+
+   <!-- Click on pictures -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <script src="/lang.js"></script>
+  <script src="/lightbox.js"></script>
+
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+  
+  <script src="/lang.js"></script>
+</body>
+</html>
