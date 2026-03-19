@@ -110,7 +110,7 @@ body{
 .card img{
   width:100%;
   height: 320px;
-  object-fit: contain;
+  object-fit: cover;
   display:block;
   filter: brightness(.95);
   background: rgba(15,33,68,0.35);
